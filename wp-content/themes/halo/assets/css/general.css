@@ -1,0 +1,11 @@
+.container {
+  padding: 0 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex; /* Ensure container behaves as flex */
+  flex-direction: column; /* Column layout */
+}
+
+.content-wrapper {
+  padding-top: 120px;
+}

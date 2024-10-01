@@ -1,0 +1,83 @@
+.news-container {
+  padding-top: 32px;
+}
+.news-container h1 {
+  font-size: 60px;
+}
+.news-wrapper {
+  display: grid;
+  margin-top: 50px;
+  gap: 20px;
+  grid-template-columns: 65% 35%;
+}
+
+.news-wrapper2 {
+  display: grid;
+  margin-top: 50px;
+  gap: 20px;
+  grid-template-columns: 35% 65%;
+}
+.news-item img {
+  width: 100%;
+  height: 100%;
+  border-bottom-right-radius: 60px;
+}
+
+.news-item:hover img {
+  transform: scale(1.1);
+  transition: all 0.4s;
+}
+.news-item {
+  position: relative;
+  overflow: hidden;
+
+  object-fit: contain;
+}
+
+.article-wrapper {
+  z-index: 1;
+  max-width: 500px;
+  width: 400px;
+  color: white;
+  position: absolute;
+  background-color: red;
+  top: 70%;
+  border-bottom-right-radius: 30px;
+  padding: 15px;
+  font-weight: 500;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow {
+  font-size: 40px;
+  font-weight: light;
+}
+.article {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.article-wrapper::before {
+  content: ""; /* Display the pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(145, 2, 2);
+  border-bottom-right-radius: 30px;
+
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+.news-item:hover .article-wrapper::before {
+  width: 100%; /* Expand width on hover */
+}
+.news-item:hover .article-wrapper {
+  color: white;
+}
+
+.article-title {
+  font-size: 18px;
+}

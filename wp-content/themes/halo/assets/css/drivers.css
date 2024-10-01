@@ -1,0 +1,69 @@
+.last-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.last-name,
+.first-name {
+  margin: 0;
+}
+.drivers-section {
+  display: grid;
+  padding: 50px 0;
+  grid-template-columns: repeat(4, 1fr); /* 3 equal columns */
+  gap: 60px;
+}
+.driver-info {
+  cursor: pointer;
+}
+.driver-number {
+  font-size: 25px;
+  font-weight: bold;
+}
+.driver-name {
+  margin: 20px 0;
+  padding-left: 20px;
+  border-left: 3px solid #ff0000; /* Red top border */
+}
+
+.driver-image img {
+  width: 100%;
+}
+.driver-profile {
+  padding-top: 20px;
+  cursor: pointer;
+  border-top-right-radius: 20px; /* Adjust the value as needed */
+
+  border-top: 1px solid white; /* Red top border */
+  border-right: 1px solid white; /* Green right border */
+}
+
+.driver-profile:hover {
+  border-top: 1px solid #ff0000; /* Red top border */
+  border-right: 1px solid rgb(0 147 204); /* Green right border */
+}
+.driver-image {
+  align-items: end;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.driver-number img {
+  width: 100%;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.driver-profile a {
+  text-decoration: none;
+  color: white;
+}
+
+.driver-name p {
+  text-transform: uppercase;
+}
